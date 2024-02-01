@@ -71,6 +71,45 @@ hi  echo $?
 512
 hi  ls no_such_file 2> file
 hi  Control-C
+> hi:  touch colors.txt
+hi:  cat > colors.txt
+blue
+black
+red
+red
+green 
+blue
+green
+red
+red
+blue
+hi:  cat colors.txt
+blue
+black
+red
+red
+green 
+blue
+green
+red
+red
+blue
+hi:  cat colors.txt | cat | cat | cat
+blue
+black
+red
+red
+green 
+blue
+green
+red
+red
+blue
+hi:  sort colors.txt | uniq –c | sort –r | head -3
+uniq: –c: No such file or directory
+sort: cannot read: –r: No such file or directory
+hi:  quit
+Quit button detected, Thanks for using hello Shell
 
 
 
