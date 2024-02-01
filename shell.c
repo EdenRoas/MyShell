@@ -13,7 +13,8 @@
 #define TRUE 1
 
 //Declaring all global variables
-char promptName[MAX_CMD_SIZE] = "Ciii Shell"; //prompt name
+int process(char **args);
+char promptName[MAX_CMD_SIZE] = "hello:"; //prompt name
 int lastCommandStatus = -1; //status
 char prevCommand[MAX_CMD_SIZE]; //Previous command buffer
 char tmpCommand[MAX_CMD_SIZE]; //Curret command buffer
@@ -401,7 +402,7 @@ int main()
 
         // exit
         if (!strcmp(command, "quit")){
-            printf("Quit button detected, Thanks for using Ciii Shell\n");
+            printf("Quit button detected, Thanks for using hello Shell\n");
             exit(0);}
 
         // save last command
