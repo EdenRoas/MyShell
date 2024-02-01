@@ -3,16 +3,16 @@
 
 
 
-all: shell
+all: myshell
 
 
-shell: shell.o llist.o
-	gcc -o myshell shell.o llist.o
+myshell: myshell.o llist.o
+	gcc -o myshell myshell.o llist.o
 
 
 
-shell.o: shell.c llist.h
-	gcc -c shell.c
+myshell.o: myshell.c llist.h
+	gcc -c myshell.c
 
 
 
