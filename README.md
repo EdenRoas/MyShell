@@ -27,7 +27,50 @@ If the command is in our "command arsenal" we will execute it, if not we will se
 
 *read x | Eden* - variable decleration using scanning input from user.
 
-# Images
+# Examples from my terminal:
+* @EdenRoas ➜ /workspaces/MyShell (main) $ if date | grep Fri
+> then
+> echo "Shabat Shalom"
+> else
+> echo "Hard way to go"
+> fi
+Hard way to go
+*@EdenRoas ➜ /workspaces/MyShell (main) $ ./myshell
+hello: date >> myfile
+hello: cat myfile
+cat: myfile: Permission denied
+hello: date –u >> myfile
+date: invalid date ‘–u’
+hello: cat myfile
+cat: myfile: Permission denied
+hello: wc -l < myfile
+wc: 'standard input': Bad file descriptor
+0
+wc: -: Bad file descriptor
+hello: prompt = hi
+Changed prompt name to hi 
+hi  mkdir mydir
+hi  cd mydir
+chdir() to mydir
+hi  pwd
+/workspaces/MyShell/mydir
+hi  touch file1 file2 file3
+hi  ls
+file1  file2  file3
+hi  !!
+file1  file2  file3
+hi  echo abc xyz
+abc xyz 
+hi  ls
+file1  file2  file3
+hi  echo $?
+0
+hi  ls no_such_file
+ls: cannot access 'no_such_file': No such file or directory
+hi  echo $?
+512
+hi  ls no_such_file 2> file
+hi  Control-C
 
 
 
